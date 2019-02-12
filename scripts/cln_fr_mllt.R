@@ -1,0 +1,51 @@
+x<-x %>%str_replace_all("bugü", "bugün")
+x<-x %>%str_replace_all("ümle", "cümle")
+x<-x %>%str_replace_all("çerik", "içerik")
+x<-x %>%str_replace_all("nde", "")
+x<-x %>%str_replace_all("nda", "")
+x<-x %>%str_replace_all("yla", "")
+x<-x %>%str_replace_all("com", "")
+x<-x %>%str_replace_all("www", "")
+x<-x %>%str_replace_all("dan", "")
+x<-x %>%str_replace_all("Hürriyet", "")
+x<-x %>%str_replace_all("nin", "")
+x<-x %>%str_replace_all("doğru", "")
+x<-x %>%str_replace_all("dogru", "")
+x<-x %>%str_replace_all("arasi", "")
+x<-x %>%str_replace_all("arası", "")
+x<-x %>%str_replace_all("dedi", "")
+x<-x %>%str_replace_all("var", "")
+x<-x %>%str_replace_all("embed", "")
+x<-x %>%str_replace_all("sh", "")
+x<-x %>%str_replace_all("ürriyet", "")
+x<-x %>%str_replace_all("i<U+0307>lgi<U+0307>ni<U+0307>zi<U+0307>", "ilgi")
+x<-x %>%str_replace_all("bi<U+0307>lgi<U+0307>sayariniz", "bilgisayar")
+
+x<-x %>%str_replace_all("Ä±", "ı")  
+x<-x %>%str_replace_all("Ã¼", "ü")
+x<-x %>%str_replace_all("Ã¶", "ö")
+x<-x %>%str_replace_all("Ã§", "ç")  
+x<-x %>%str_replace_all("ÅŸ", "ş")  
+x<-x %>%str_replace_all("ÄŸ", "ğ")  
+
+x<-x %>%str_replace_all("ÅŸ", "Ş")
+x<-x %>%str_replace_all("Ãœ", "Ü")
+x<-x %>%str_replace_all("Ã‡", "Ç")
+x<-x %>%str_replace_all("Ã–", "Ö")
+x<-x %>%str_replace_all("Ä°", "İ")
+x<-x %>%str_replace_all("â", "a")
+x<-x %>%str_replace_all("\u0307", "")
+
+x<-x %>%str_replace_all("^\\s*<U\\+\\w+>\\s*", " ")
+x<-x %>%str_replace_all("\\b\\w{1,2}\\s", " ")
+x<-x %>%str_replace_all("§", " ")
+x<-x %>%str_replace_all("Ã", "")
+x<-x %>%str_replace_all("ã", "")
+x<-x %>%str_replace_all(" *\\b[[:alpha:]]{1,2}\\b *", "")
+x<-x %>%str_replace_all("^ +| +$|( ) +", "\\1")
+
+
+
+
+
+
